@@ -15,6 +15,8 @@ namespace InputPanelPlus
             Application.SetCompatibleTextRenderingDefault(false);
 
             _mipControl = new MathInputControlClass();
+            var centerOfScreen = Screen.AllScreens[0].WorkingArea.Center();
+            _mipControl.CenterOn(centerOfScreen);
             _mipControl.EnableExtendedButtons(true);
             _mipControl.EnableAutoGrow(true);
             _mipControl.Close += Application.ExitThread;

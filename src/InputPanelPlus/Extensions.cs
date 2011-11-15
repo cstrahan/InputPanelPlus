@@ -24,5 +24,15 @@ namespace InputPanelPlus
         {
             form.Location = new Point(point.X - form.Width / 2, point.Y - form.Height / 2);
         }
+
+        public static void CenterOn(this MathInputControl control, Point point)
+        {
+            var size = control.Position();
+
+            var topLeft = new Point(point.X - size.Width/2, point.Y - size.Height/2);
+            control.SetPosition(
+                topLeft.X, topLeft.Y, 
+                topLeft.X + size.Width, topLeft.Y + size.Height);
+        }
     }
 }
