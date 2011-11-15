@@ -1,0 +1,13 @@
+h1. Input Panel Plus
+
+h2. Author
+
+Charles Strahan
+
+h2. About
+
+This is an enhanced Math Input Panel that can output MathML and LaTeX
+
+h2. Credits
+
+This project was inspired by Steven Lovegrove's excellent "TextTablet":http://www.doc.ic.ac.uk/~sl203/?id=39.
